@@ -4,7 +4,7 @@ const seeds = Array.from({ length: 10 }, (_, i) => 64 + i);
 let grandTotal = 0;
 
 for (const seed of seeds) {
-    const url = `https://live.ds.study.iitm.ac.in/table-sum/${seed}`;
+    const url = `https://sanand0.github.io/tdsdata/js_table/?seed=${seed}`;
     const browser = await chromium.launch();
     const page = await browser.newPage();
     await page.goto(url);
